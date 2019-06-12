@@ -70,4 +70,8 @@ function removeFromCart(item) {
   return cart;
 }
 
-
+function placeOrder(cardNumber) {
+  if(arguments.length == 0) {
+    return ''
+  }
+}
