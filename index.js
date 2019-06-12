@@ -31,7 +31,7 @@ function viewCart() {
       array.push(`${getCart()[i].itemName} at $${getCart()[i].itemPrice}`);
     }
     if(array === 1) {
-      output += ``;
+      output += ` ${array[1]}.`;
     }
     return output;
   }
