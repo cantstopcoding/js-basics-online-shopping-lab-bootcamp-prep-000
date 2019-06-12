@@ -63,8 +63,9 @@ function removeFromCart(item) {
       cart.splice(i, 1);
     }
   }
-  if(item !== getCart()[i].itemName) {
-    return 'That item is not in your cart.';
+  let itemNotInCart = true;
+  if(itemNotInCart) {
+    return ;
   }
   return cart;
 }
