@@ -63,6 +63,6 @@ function removeFromCart(item) {
       cart.splice(i, 1);
     }
   }
-  item.includes()
+  
   return cart;
 }
