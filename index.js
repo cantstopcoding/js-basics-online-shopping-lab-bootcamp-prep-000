@@ -18,16 +18,21 @@ function addToCart(item) {
 }
 
 function viewCart() {
+  let output = "In your cart, you have";
+  
   if(cart.length === 0) {
     return "Your shopping cart is empty.";
   }
-  if(cart.length === 1) {
-    return `In your cart, you have ${getCart()[0].itemName} at $${getCart()[0].itemPrice}.`;
-  }
-  if(cart.length === 2) {
-    return `In your cart, you have ${getCart()[0].itemName} at $${getCart()[0].itemPrice}, and ${getCart()[1].itemName} at $${getCart()[1].itemPrice}.`;
-  }
-  if(cart.length > 2) {
-    let output = "In your cart, you have"
+  //Use an else statement
+  //Push into an empty array the itemName and itemPrice
+  else{
+    let array = [];
+    for(let i = 0; i < cart.length; i++) {
+      array.push(`${getCart()[i].itemName} at $${getCart()[i].itemPrice}`);
+    }
+    if(array === 1) {
+      output += ``;
+    }
+    return output;
   }
 }
