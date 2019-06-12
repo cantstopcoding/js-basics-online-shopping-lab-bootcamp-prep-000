@@ -41,9 +41,8 @@ function viewCart() {
     //I have to combine the output
     //
     if(cart.lengt >= 3) {
-      let middle = array.join(', ');
-      let end = array.pop();
-      output += ` ${middle}, and ${end}.`;
+      
+      output += ` ${array[0]}.`;
     }
     return output;
   }
