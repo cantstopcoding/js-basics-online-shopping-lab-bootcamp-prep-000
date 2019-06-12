@@ -29,9 +29,9 @@ function viewCart() {
     let array = [];
     for(let i = 0; i < cart.length; i++) {
       array.push(`${getCart()[i].itemName} at $${getCart()[i].itemPrice}`);
-    }
-    if(cart.length === 1) {
+      if(cart.length === 1) {
       output += ` ${array[1]}.`;
+    }
     }
     return output;
   }
