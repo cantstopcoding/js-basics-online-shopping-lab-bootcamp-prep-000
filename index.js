@@ -64,7 +64,7 @@ function removeFromCart(item) {
     }
   }
   if(item !== getCart()[i].itemName) {
-    return
+    return 'That item is not in your cart.';
   }
   return cart;
 }
