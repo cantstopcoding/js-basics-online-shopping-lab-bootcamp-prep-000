@@ -63,6 +63,8 @@ function removeFromCart(item) {
       cart.splice(i, 1);
     }
   }
-  
+  if(item !== getCart()[i].itemName) {
+    return
+  }
   return cart;
 }
