@@ -33,9 +33,18 @@ function viewCart() {
     if(cart.length === 1) {
       output += ` ${array[0]}.`;
     }
-      if(cart.length === 2) {
+    if(cart.length === 2) {
         output += ` ${array[0]}, and ${array[1]}.`;
       }
+    //I have to pop off the last element
+    //I have to use the join() method
+    //I have to combine the output
+    //
+    if(cart.lengt >= 3) {
+      let end = array.pop();
+      let middle = array.join(', ');
+      output += ` ${middle}, and ${end}.`;
+    }
     return output;
   }
 }
