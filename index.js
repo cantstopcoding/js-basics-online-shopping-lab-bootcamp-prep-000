@@ -48,3 +48,5 @@ function viewCart() {
     return output;
   }
 }
+
+function 
