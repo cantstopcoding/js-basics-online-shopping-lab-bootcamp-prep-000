@@ -40,9 +40,10 @@ function viewCart() {
     //I have to use the join() method
     //I have to combine the output
     //
-    if(cart.lengt > 2) {
-      
-      output += ` ${array[0]}.`;
+    if(cart.length >= 3) {
+      let middle = array.join(', ');
+      let end = array.pop();
+      output += ` ${middle}, and ${end}.`;
     }
     return output;
   }
