@@ -49,4 +49,7 @@ function viewCart() {
   }
 }
 
-function 
+function total() {
+    
+}
+
