@@ -57,3 +57,6 @@ function total() {
   return sum;
 }
 
+function removeFromCart() {
+  
+}
