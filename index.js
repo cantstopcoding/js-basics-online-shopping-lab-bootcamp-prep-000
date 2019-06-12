@@ -32,6 +32,9 @@ function viewCart() {
       if(cart.length === 1) {
       output += ` ${array[0]}.`;
     }
+      if(cart.length === 2) {
+        output += ` ${array[0]}, and ${array[1]}.`;
+      }
     }
     return output;
   }
