@@ -76,7 +76,7 @@ function placeOrder(cardNumber) {
   }
   
   if(arguments.length === 1) {
-    cartTotal = total();
+    let cartTotal = total();
     cart.length = 0;
     return `Your total cost is $${cartTotal}, which will be charged to the card ${cardNumber}.`;
   }
