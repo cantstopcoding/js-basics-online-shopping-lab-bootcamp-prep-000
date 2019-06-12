@@ -40,7 +40,7 @@ function viewCart() {
     //I have to use the join() method
     //I have to combine the output
     //
-    if(cart.lengt >= 3) {
+    if(cart.lengt > 2) {
       
       output += ` ${array[0]}.`;
     }
